@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 const Menu2 = () => {
 
     return (
         <nav>
             <div>
-                <span>Eliminar chat</span>
+                <span>Delete chat</span>
             </div>
             <div>
-                <span>Bloquear contacto</span>
+                <span>Block user</span>
             </div>
             <div>
-                <span>Añadir a favoritos</span>
+                <span>Add to favorites</span>
             </div>
             <div>
-                <span>Ver perfil</span>
+                <Link to="/user/88">See profile</Link>
             </div>
         </nav>
      );

@@ -9,17 +9,62 @@ const ChatList = () => {
             <Menu1/>
             <section>
                 <article>
-                    <img src="favicon.ico"/>
+                    <img src="../favicon.ico"/>
                     <h5>Edward</h5>
                     <p>Hola como estas</p>
                 </article>
                 <article>
-                    <img src="favicon.ico"/>
+                    <img src="../favicon.ico"/>
                     <h5>Edward</h5>
                     <p>Hola como estas</p>
                 </article>
                 <article>
-                    <img src="favicon.ico"/>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
+                    <h5>Edward</h5>
+                    <p>Hola como estas</p>
+                </article>
+                <article>
+                    <img src="../favicon.ico"/>
                     <h5>Edward</h5>
                     <p>Hola como estas</p>
                 </article>

@@ -7,11 +7,24 @@ const NavBar = () => {
         <nav>
             <h3 className="movil">BubbleChat</h3>
             <Outlet className="movil"/>
-            <Link to="friends">Friends</Link>
-            <Link to="groups">Groups</Link>
-            <button className="movil">+</button>
-            <Link to="world">World</Link>
-            <Link to="favorites">Favorites</Link>
+            <ul>
+                <li>
+                    <Link to="friends">Friends</Link>
+                </li>
+                <li>
+                    <Link to="groups">Groups</Link>
+                </li>
+                <li>
+                    <button className="movil">+</button>
+                </li>
+                <li>
+                    <Link to="world">World Chat</Link>
+                </li>
+                <li>
+                    <Link to="favorites">Favorites</Link>
+                </li>
+            </ul>
+            
         </nav>
      );
 }

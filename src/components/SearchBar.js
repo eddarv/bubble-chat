@@ -2,8 +2,8 @@ const SearchBar = () => {
 
     return (
         <nav>
-            <button>S</button>
-            <button>M</button>
+            <button><img src="../search.svg"/></button>
+            <button><img src="../options.svg"/></button>
         </nav>
      );
 }

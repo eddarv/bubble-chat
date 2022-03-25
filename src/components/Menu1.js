@@ -1,19 +1,23 @@
+import { Link } from "react-router-dom";
+
 const Menu1 = () => {
 
     return (
         <nav>
-            <div>
-                <span>Ver mi perfil</span>
-            </div>
-            <div>
-                <span>Vaciar chats</span>
-            </div>
-            <div>
-                <span>Nueva difusión</span>
-            </div>
-            <div>
-                <span>Añadir Amigo</span>
-            </div>
+            <ul>
+                <li>
+                    <Link to="/profile">See profile</Link>
+                </li>
+                <li>
+                    <span>Empty chats</span>
+                </li>
+                <li>
+                    <span>New broadcast</span>
+                </li>
+                <li>
+                    <span>Friend List</span>
+                </li>
+            </ul>
         </nav>
      );
 }

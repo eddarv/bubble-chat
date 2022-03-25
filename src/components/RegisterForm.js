@@ -486,7 +486,7 @@ const RegisterForm = ({setRegister,setRegistered}) => {
 			{!errors.date || <h6 style={{color:"#FF0000"}}>{errors.date}</h6>}
 
             {completed || <h5 style={{color:"#FF0000"}}>Incomplete Data</h5>}
-            <input type="submit" value="Login"/>
+            <input type="submit" value="Register"/>
         </form>
      );
 }

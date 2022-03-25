@@ -17,30 +17,35 @@ const LoginBubble = ({setLoged}) => {
 
 
     return ( 
-        <div className="LoginBubble">
-
-            {/*backButton*/}
+        <div className="container">
+            <div className="main-bubble">
+                {/*backButton*/}
             
-            {( (login && !register) || (!login && register) ) && <button onClick={backFunction}><img src="back-button.svg"/></button>}
+                {( (login && !register) || (!login && register) ) && <button onClick={backFunction}><img src="back-button.svg"/></button>}
 
-            {/*Main Bubble Login/Register*/}
+                {/*Main Bubble Login/Register*/}
 
-            <h1>{login ? "Welcome" : ( register ? "Register" : (registered ? "" : "Bubble Chat") ) }</h1>
-            { (login||register||registered) || <button onClick={() => setLogin(true)}>Login</button>}
-            { (login||register||registered) || <button onClick={() => setRegister(true)}>Register</button>}
+                <div class="text-container">
+                    <h1>{login ? "Welcome" : ( register ? "Register" : (registered ? "" : "Bubble Chat") ) }</h1>
+                </div>
 
-            {/*Login Section*/}
+                <div className="btn-box">
+                { (login||register||registered) || <button onClick={() => setLogin(true)}>Login</button>}
+                { (login||register||registered) || <button onClick={() => setRegister(true)}>Register</button>}
+                </div>
 
-            { (login && !register) && <LoginForm setLoged={setLoged}/>}
+                {/*Login Section*/}
 
-            {/*Register Section*/}
+                { (login && !register) && <LoginForm setLoged={setLoged}/>}
 
-            { (!login && register) && <RegisterForm setRegister={setRegister} setRegistered={setRegistered}/>}
+                {/*Register Section*/}
 
-            {/*You are registered Message!*/}
+                { (!login && register) && <RegisterForm setRegister={setRegister} setRegistered={setRegistered}/>}
 
-            { (registered) && <h3>You are registered!</h3>}
+                {/*You are registered Message!*/}
 
+                { (registered) && <h3>You are registered!</h3>}
+            </div>
         </div>
      );
 }

@@ -1,7 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 html{
   box-sizing: border-box;
   font-size: 16px;
-  font-family: sans-serif;
+  --main-black: #101010;
+  --second-black: #373737;
+  --third-black: #777777;
+  --main-white: #FFFFFF;
+  --second-white: #E8E8E8;
+  --pastel-red: #FF6D6D;
+  --pastel-orange: #FF9356;
+  --pastel-yellow: #FFDC61;
+  --pastel-green: #ABFF68;
+  --pastel-cyan: #90EEDD;
+  --pastel-blue: #71B1EC;
+  --pastel-purple: #7A5AF6;
+  --pastel-pink: #FEA7C6;
+  --pastel-violet: #DEA7F1;
 }
 
 *,
@@ -9,3 +27,104 @@ html{
 *::before{
   box-sizing: inherit;
 }
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Kanit', sans-serif;
+  font-weight:300;
+  margin: 0;
+}
+
+h1{
+  font-size: clamp(24px,8vw,48px);
+}
+
+h2{
+  font-size: clamp(20px,6.66666667vw,40px);
+}
+
+h3{
+  font-size: clamp(16px,5.33333334vw,32px);
+}
+
+h4{
+  font-size: clamp(12px,4vw,24px);
+}
+
+h5{
+  font-size: clamp(8px,2.66666667vw,16px);
+}
+
+h6{
+  font-size: clamp(4px,1.33333334vw,8px);
+}
+
+p,span,a,button{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight:400;
+  font-size: clamp(10px,3.33333334vw,20px);
+}
+
+a{
+  text-decoration: none;
+}
+
+
+                                                                            /* Bubble Login */
+
+.btn-box{
+  display: inline-flex;
+  position: absolute;
+  width: 65%;
+  height: 10%;
+  justify-content: space-between;
+  top: 55%;
+  left: 17.5%;
+}
+
+.btn-box > button{
+  background-color: var(--main-black);
+  color: var(--main-white);
+  width: clamp(70px,42.94%,140px);
+  height: 100%;
+  text-align: center;
+  padding: 0px;
+  border-radius: 20% / 50%;
+  border: thin solid var(--main-white);
+}
+
+.container{
+  display: flex;
+  width: clamp(250px,100%,100%);
+  height: clamp(250px,100vh,100vh);
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bubble{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--main-black);
+  border-radius: 50%;
+  width: clamp(250px,80vw,500px);
+  height: clamp(250px,80vw,500px);
+}
+
+.main-bubble>.text-container>h1{
+  color: var(--main-white);
+}
+
+.main-bubble .text-container{
+  display: inline-block;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  top: 35%;
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+
